@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Links
 
-[Add live site URL here](https://your-live-site-url.com)
+[live site URL here](https://georgealexxenos.github.io/frontendmentor_social_proof_section.github.io-/)
 
 ## My process
 
