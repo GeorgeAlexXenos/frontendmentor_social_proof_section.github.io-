@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+:root {
+  /* Primary */
+  --veryDarkMagenta: hsl(300, 43%, 22%);
+  --softPink: hsl(333, 80%, 67%) /* Neutral */;
+  --darkGrayishMagenta: hsl(303, 10%, 53%);
+  --lightGrayishMagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./images/bg-pattern-top-mobile.svg);
+  background: url(./images/bg-pattern-bottom-mobile.svg);
+  font-family: "Spartan", sans-serif;
+  margin: 6rem 0;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.firstrow {
+  margin-bottom: 2rem;
+}
+/* header  */
+header {
+  display: flex;
+  width: 21.5rem;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+h1 {
+  width: 17rem;
+  margin: auto;
+  color: var(--veryDarkMagenta);
+  font-weight: 700;
+  line-height: 2rem;
+}
+header p {
+  width: 21.5rem;
+  color: var(--darkGrayishMagenta);
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  margin-bottom: 2.2rem;
+}
+
+/* rated section */
+.rated {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.first,
+.second,
+.third {
+  padding: 1rem;
+  background-color: var(--lightGrayishMagenta);
+  border-radius: 0.5rem;
+}
+.first p,
+.second p,
+.third p {
+  padding-top: 0.8rem;
+  color: var(--veryDarkMagenta);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* testimonials */
+.testimonial {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  -moz-row-gap: 1rem;
+  row-gap: 1rem;
+  font-size: 0.8rem;
+  color: white;
+}
+.section1 {
+  background-color: var(--veryDarkMagenta);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.section1 img {
+  float: left;
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 1.3rem;
+}
+.clear {
+  clear: both;
+}
+.section1 p {
+  margin-top: 1.8rem;
+  line-height: 1.6rem;
+  text-align: left;
+}
+h2,
+h3 {
+  text-align: left;
+  position: relative;
+  top: 0.6rem;
+  font-size: 0.9rem;
+}
+h3 {
+  color: var(--softPink);
+  font-size: 0.8rem;
+}
+
+/* -------media queries------- */
+@media only screen and (min-width: 970px) {
+  body {
+    background: url(./images/bg-pattern-top-desktop.svg);
+    background: url(./images/bg-pattern-bottom-desktop.svg);
+    margin: 5rem auto;
+    height: 100vh;
+    width: 60vh;
+    display: flex;
+    justify-content: flex-start;
+  }
+  h1 {
+    width: 25rem;
+    margin: 0;
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: 2.5rem;
+  }
+  header {
+    position: relative;
+    top: 3rem;
+  }
+  header p {
+    text-align: left;
+    width: 25rem;
+  }
+  .rated {
+    height: 100%;
+    width: 480px;
+    position: relative;
+    top: 3.2rem;
+  }
+  .first,
+  .second,
+  .third {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .first {
+    position: relative;
+    right: 20%;
+  }
+  .second {
+    position: relative;
+    right: 10%;
+  }
+  .stars {
+    margin-right: 2rem;
+  }
+  .firstrow,
+  .testimonial {
+    min-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .firstrow p {
+    padding: 0;
+  }
+
+  .testimonial {
+    min-width: 80vw;
+    margin-top: 7rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+  .section1 {
+    width: 400px;
+  }
+  .testimonial p {
+    margin-top: 3rem;
+  }
+  .tranform1 {
+    transform: translateY(-8%);
+  }
+  .tranform2 {
+    transform: translateY(8%);
+  }
+}
+
+@media screen and (min-width: 970px) and (max-width: 1439px) {
+  .rated {
+    width: 410px;
+  }
+  h1 {
+    font-size: 2.3rem;
+    width: 18rem;
+  }
+  header p {
+    text-align: left;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .rated {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.6rem;
+    width: 280px;
+  }
+  header p {
+    width: 280px;
+    margin: 1rem auto;
+  }
+  .section1 {
+    width: auto;
+    margin: auto;
+  }
+}
